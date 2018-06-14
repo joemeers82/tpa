@@ -1,0 +1,27 @@
+.site-header{
+	box-shadow:0 0 2px $mainBlue;
+	width:100%;
+	padding:20px;
+	margin-bottom:40px;
+	background-color:white;
+
+	&__headline-tag{
+		color:$mainBlue;
+		margin-bottom:5px;
+		@mixin atMedium{
+			margin:0px;
+		}
+	}
+
+	&__logo {
+		text-align: center;
+		margin:auto;
+		img{
+			max-width:250px;
+		}
+	}
+
+	&__project-info {
+		text-align:center;
+	}
+}

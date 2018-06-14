@@ -1,0 +1,83 @@
+.sidebar {
+	&__task-list {
+		box-shadow: 0 0 3px $mainBlue;
+		border-radius:3px;
+		background-color:white;
+		list-style:none;
+		padding:10px 30px;
+		margin-top:20px;
+
+	}
+	
+	&__task-item {
+		border-bottom:solid thin lightgrey;
+		padding:10px 0;
+		display: flex;
+	}
+
+	&__remove{
+		height:30px;
+		width:30px;
+		border-radius:50%;
+		border: solid 2px $darkGrey;
+		cursor:pointer;
+	}
+	
+	&__check_container {
+		height:100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&:hover{
+			.sidebar__check{
+				border:solid 1px $darkRed;
+			}
+
+			.sidebar__check-right{
+				transition: all .2s ease-out;
+				transform:rotate(134deg);
+				width:15px;
+				left:5px;
+				top:-1px;
+			}
+			
+			.sidebar__check-left{
+				transition: all .2s ease-out;
+				transform:rotate(48deg);
+				top:1px;
+				width:15px;
+				left:6px;
+			}
+		}
+	}
+	
+	&__check {
+		border:solid 1px $darkGreen;
+		position:relative;
+	}
+	
+	&__check-right{
+		transform:rotate(60deg);
+		transition: all .2s ease-out;
+		width:6px;
+		left:7px;
+	}
+	
+	&__check-left {
+		transform:rotate(120deg);
+		transition: all .2s ease-out;
+		left:8px;
+		width:14px;
+	}
+
+	&__task-name {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left:20px;
+		cursor: pointer;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
