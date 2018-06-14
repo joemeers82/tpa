@@ -434,7 +434,7 @@ a {
 		background-color:white;
 		list-style:none;
 		padding:10px 30px;
-		margin-top:20px;
+		margin-top:22px;
 
 	}
 
@@ -519,7 +519,7 @@ a {
 	background-color:white;
 	border-radius:3px;
 	
-	box-shadow: 0 0 2px #232d42;
+	box-shadow: 0 0 3px #232d42;
 }
 
 .task-detail__link{

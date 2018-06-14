@@ -3,7 +3,7 @@
 	background-color:white;
 	border-radius:3px;
 	
-	box-shadow: 0 0 2px $mainBlue;
+	box-shadow: 0 0 3px $mainBlue;
 	
 	&__link{
 		text-align:center;
